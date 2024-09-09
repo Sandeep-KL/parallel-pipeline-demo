@@ -19,8 +19,8 @@ pipeline {
                 }
 	       }
               }
-            stage('ubuntu-agent-pipeline') {
-              agent {label 'ubuntu'}
+            stage('label1-agent-pipeline') {
+              agent {label 'label1'}
               stages{
                 stage('Build') {
                 steps {
